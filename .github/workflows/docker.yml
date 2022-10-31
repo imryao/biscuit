@@ -35,6 +35,6 @@ jobs:
           push: true
           tags: |
             imryao/biscuit:latest
-            imryao/biscuit:$(date +%s)
+            imryao/biscuit:${{ GITHUB_SHA }}}
             ccr.ccs.tencentyun.com/mryao/biscuit:latest
-            ccr.ccs.tencentyun.com/mryao/biscuit:$(date +%s)
+            ccr.ccs.tencentyun.com/mryao/biscuit:${{ GITHUB_SHA }}}
